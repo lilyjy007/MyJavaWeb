@@ -8,12 +8,21 @@
     </head>  
        
            <body bgcolor=" #E3E3E3 ">
-                <h2 align="left">请提交信息</h2>
-		<hr align="left" size="2" width="200">
+                <h2 align="center">请提交信息</h2>
+		<hr align="center" size="2" width="200">
+		<center>
     <form action="" method="post" >
-        姓名：<input type="text" name="请输入姓名" size="10"><br>
-        <input type="submit" value="提交" />
+    <table border="1" width="400" cellpadding="1" cellspacing="1">
+      <tr> 
+        <td>姓名：</td> <td><input type="text" id="inputname" maxlength ="15" size="20"></td>
+        </tr>
+        <tr>
+        <center>
+       <td> <input type="submit" value="提交"  onclick=/></td>
+       </center>
+        </tr>
+        </table>
     </form>
-        
+      </center>  
     </body>  
 </html>  
