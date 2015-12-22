@@ -6,8 +6,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
         <title>Insert title here</title>  
     </head>  
-      
-    <body>  
-        <c:out value="${str0121}"></c:out>  
+       
+           <body bgcolor=" #E3E3E3 ">
+                <h2 align="left">请提交信息</h2>
+		<hr align="left" size="2" width="200">
+    <form action="" method="post" >
+        姓名：<input type="text" name="请输入姓名" size="10"><br>
+        <input type="submit" value="提交" />
+    </form>
+        
     </body>  
 </html>  
