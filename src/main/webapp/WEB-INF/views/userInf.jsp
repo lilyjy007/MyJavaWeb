@@ -10,12 +10,13 @@
 <title>visitors' information</title>
 </head>
 <body bgcolor="#E3E3E3">
- <h2 align="center">Hello,${username},你是第${count}个访问者！</h2>
-<table width="100%" border="1" align="center">
-<th>用户信息</th><th>登录时间</th>
+ <h3 align="center">Hello,"${username}",您是第${count}个访问者，在您前面的访问者是：</h3>
+ <hr align="center" size="2" width="500">
+<table width="50%" border="1" align="center">
+<th>用户信息</th><th>访问时间</th>
 <c:forEach items="${model2}" var="node">  
-<tr><td><c:out value="${node.key}"></c:out></td>  
- <td><c:out value="${node.value}"></c:out></td></tr> 
+<tr><td style="text-align:center"><c:out value="${node.key}"></c:out></td>  
+ <td style="text-align:center"><c:out value="${node.value}"></c:out></td></tr> 
 </c:forEach>
 </table>
 </body>

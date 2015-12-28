@@ -65,7 +65,8 @@ public class GeneralController extends AbstractController {
       	model.put(key, value);
         count++;
     }
-    iterator.close();//must be
+    //System.out.println(count);
+    iterator.close();
     
     List <Map.Entry<String,String>> infoIds=new ArrayList<Map.Entry<String,String>>(model.entrySet());
     Collections.sort(infoIds,new Comparator<Map.Entry<String,String>>(){
@@ -74,23 +75,17 @@ public class GeneralController extends AbstractController {
 
     	}
     });
-  /*  for (int i = 0; i < infoIds.size(); i++) {
-        String id = infoIds.get(i).toString();
-        System.out.println(id);
-        infoIds.
-    }
-    */
-//  按登陆时间进行排序
+  //sort by time,put inf into model2
     Map<String ,String> model2=new LinkedHashMap<String,String>();
-    for (int i = 0; i < infoIds.size(); i++) {
+    for (int i = 0; i < infoIds.size()-1; i++) {
         model2. put( infoIds.get(i).getKey(),infoIds.get(i).getValue());
-        System.out.println(infoIds.get(i).getKey()+":"+infoIds.get(i).getValue());
-    }
+    //   System.out.println(infoIds.get(i).getKey()+":"+infoIds.get(i).getValue());
+   }
 	ModelAndView mav=new ModelAndView();
 	mav.addObject("model2",model2);
 	mav.addObject("username",username);
 	mav.addObject("count",count);
-	mav.setViewName("showUser");
+	mav.setViewName("userInf");
 
     return mav;
 	
