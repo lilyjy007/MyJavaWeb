@@ -14,12 +14,12 @@
     <form action="" method="post" >
     <table border="1" width="400" cellpadding="1" cellspacing="1">
       <tr> 
-        <td>姓名：</td> <td><input type="text" id="inputname" maxlength ="15" size="20"></td>
+        <td>姓名：</td> <td><input type="text" id="inputname" name="username" maxlength ="15" size="20"></td>
         </tr>
         <tr>
-        <center>
-       <td> <input type="submit" value="提交"  onclick=/></td>
-       </center>
+ 
+       <td> <input type="submit" value="提交" /></td>
+
         </tr>
         </table>
     </form>

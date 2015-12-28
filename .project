@@ -39,4 +39,11 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>lib</name>
+			<type>2</type>
+			<location>C:/Program Files/Java/jdk1.8.0_66/jre/lib</location>
+		</link>
+	</linkedResources>
 </projectDescription>
